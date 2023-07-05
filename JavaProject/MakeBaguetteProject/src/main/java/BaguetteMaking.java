@@ -1,11 +1,11 @@
 public class BaguetteMaking {
 
-    BaguetteMaking (String brot, int groesseInMeter, int anzahl) {
+    BaguetteMaking (String brot, int groesseInMeter) {
 
 
 this.brot = brot;
 this.groesseInMeter = groesseInMeter;
-this.anzahl = anzahl;
+
 
 
     }
@@ -14,7 +14,6 @@ this.anzahl = anzahl;
 
     public int groesseInMeter;
 
-    public int anzahl;
 
 
 

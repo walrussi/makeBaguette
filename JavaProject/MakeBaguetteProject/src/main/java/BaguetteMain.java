@@ -3,7 +3,10 @@
 public class BaguetteMain {
     public static void main(String[] args) {
 
-        
+        BaguetteMaking weissbrotBaguette = new BaguetteMaking("weissbrot", 2);
+
+
+
 
 
         }
