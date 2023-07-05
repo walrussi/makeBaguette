@@ -1,6 +1,8 @@
 # makeBaguette
 Repository to make baguette
 
+![alt text](https://github.com/walrussi/makeBaguette/tree/main/LOGO.png?raw=true)
+
 
 Hello!
 
