@@ -1,5 +1,4 @@
 # makeBaguette
-Repository to make baguette
 
 ![Baguette](https://github.com/walrussi/makeBaguette/blob/main/LOGO.png?raw=true)
 
