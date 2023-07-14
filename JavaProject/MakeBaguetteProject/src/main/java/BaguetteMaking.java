@@ -16,11 +16,14 @@ public class BaguetteMaking {
 
         this.bread = bread;
         this.size = size;
-
+        this.salad = salad;
+        this.cheese = cheese;
 
     }
 
     public String bread;
+    public String salad;
+    public String cheese;
 
     public int size;
 
@@ -53,10 +56,22 @@ public class BaguetteMaking {
         }
 
     }
+
+    public void topAndDown() {
+
+
+    }
+
+    public void contentOfBaguette() {
+
+
+    }
+
     public void build() {
 
         background();
-
+        topAndDown();
+        contentOfBaguette();
     }
 
     public void withBread(BaguetteMaking bread) {
@@ -64,7 +79,7 @@ public class BaguetteMaking {
 
     }
 
-    public void withSize(){
+    public void withSize() {
 
 
     }
