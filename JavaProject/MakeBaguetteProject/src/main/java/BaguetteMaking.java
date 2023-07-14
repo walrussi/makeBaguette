@@ -1,3 +1,6 @@
+import java.awt.*;
+import java.awt.image.BufferedImage;
+
 public class BaguetteMaking {
 
 
@@ -8,32 +11,60 @@ public class BaguetteMaking {
      * user should be able to print out an ascii image of a baguette
      */
 
-    BaguetteMaking(String brot, int groesseInMeter) {
+    BaguetteMaking(String bread, int size, String salad, String cheese) {
 
 
-        this.brot = brot;
-        this.groesseInMeter = groesseInMeter;
+        this.bread = bread;
+        this.size = size;
 
 
     }
 
-    public String brot;
+    public String bread;
 
-    public int groesseInMeter;
+    public int size;
 
+    public void background() {
+
+        Settings settings = new Settings(100, 10);
+
+        BufferedImage bufferedImage = new BufferedImage(50, 50, BufferedImage.TYPE_INT_RGB);
+        Graphics graphics = bufferedImage.getGraphics();
+
+        System.out.println(bufferedImage);
+
+        Graphics2D graphics2D = (Graphics2D) graphics;
+        graphics2D.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING,
+                RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
+        graphics2D.drawString("BAELDUNG", 12, 24);
+
+        for (int y = 0; y < settings.height; y++) {
+            StringBuilder stringBuilder = new StringBuilder();
+
+            for (int x = 0; x < settings.width; x++) {
+                stringBuilder.append(".");
+            }
+
+            if (stringBuilder.toString().trim().isEmpty()) {
+                continue;
+            }
+
+            System.out.println(stringBuilder);
+        }
+
+    }
     public void build() {
 
+        background();
 
     }
 
-    public void withBread() {
+    public void withBread(BaguetteMaking bread) {
 
 
     }
 
-    public void withSize
-
-    {
+    public void withSize(){
 
 
     }
@@ -45,5 +76,17 @@ public class BaguetteMaking {
     public void withCheese() {
 
 
+    }
+
+    public class Settings {
+        public Font font;
+        public int width;
+        public int height;
+
+        public Settings(int width, int height) {
+
+            this.width = width;
+            this.height = height;
+        }
     }
 }
